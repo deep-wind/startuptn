@@ -192,7 +192,7 @@ if nav == "English":
             table.reset_index(inplace=True, drop=True)
             st.table(table)
         
-    df1=pd.read_excel('tnhospitals.xlsx')
+    df1=pd.read_csv('tnhospitals.csv')
     
     
     with st.beta_expander("TELEPHONE BOOKING"):
@@ -311,7 +311,7 @@ if nav == "Tamil":
             table = deepcopy(final_df)
             table.reset_index(inplace=True, drop=True)
             st.table(table)
-    df1=pd.read_excel('tnhospitals.xlsx')
+    df1=pd.read_csv('tnhospitals.csv')
     
     
     with st.beta_expander("டெலிஃபோன் புக்கிங்"):
