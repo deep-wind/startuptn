@@ -13,7 +13,7 @@ import base64
 import pandas as pd
 import streamlit as st
 from copy import deepcopy
-from fake_useragent import UserAgent
+
 #from footer_utils import image, link, layout, footer
 # = UserAgent()
 #browser_header = {'User-Agent': temp_user_agent.random}
