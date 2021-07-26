@@ -94,7 +94,8 @@ rename_mapping = {
     'block_name': 'Block Name',
     'fee_type' : 'Fees'
     }
-nav = st.sidebar.radio("Choose your Language",["Home 🏡","English","Tamil"])
+st.sidebar.markdown("<h1 style='text-align: center; color: black;'>🧭 Navigation Bar 🧭</h1>", unsafe_allow_html=True)
+nav = st.sidebar.radio("Choose your Language",["Home 🏡","English Webpage 🌐","தமிழ் வலைப்பக்கம் 🌐"])
 if nav == "English":
     set_png_as_page_bg('vac7.jpg')
     st.title('COVID19 Vaccine Slot Management System')
