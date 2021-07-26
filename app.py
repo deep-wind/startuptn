@@ -61,7 +61,7 @@ def set_png_as_page_bg(png_file):
 
 
 set_png_as_page_bg('vac1.gif')
-st.markdown("<h1 style='text-align:center; color:white;background-color:black;font-size:14pt'>💉No waiteen' if you're eighteen 💉</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center; color:black;background-color:white;font-size:20pt'>💉No waiteen' if you're eighteen 💉</h1>", unsafe_allow_html=True)
      
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True)
