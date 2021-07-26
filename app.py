@@ -96,7 +96,7 @@ rename_mapping = {
     }
 st.sidebar.markdown("<h1 style='text-align: center; color: black;'>🧭 Navigation Bar 🧭</h1>", unsafe_allow_html=True)
 nav = st.sidebar.radio("",["Home 🏡","English Webpage 🌐","தமிழ் வலைப்பக்கம் 🌐"])
-if nav == "English":
+if nav == "English Webpage 🌐":
     set_png_as_page_bg('vac7.jpg')
     st.title('COVID19 Vaccine Slot Management System')
     with st.beta_expander("ONLINE BOOKING"):
@@ -216,7 +216,7 @@ if nav == "English":
            rslt_df.reset_index(inplace=True, drop=True)
            st.table(rslt_df)
            
-if nav == "Tamil":     
+if nav == "தமிழ் வலைப்பக்கம் 🌐":     
     set_png_as_page_bg('vac7.jpg')
     st.title('COVID19 Vaccine Slot Management System')
     with st.beta_expander("ஆன்லைன் முன்பதிவு"):
