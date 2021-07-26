@@ -105,11 +105,10 @@ if nav == "English Webpage 🌐":
     with st.beta_expander("ONLINE BOOKING"):
         valid_states = list(np.unique(mapping_df["state_name"].values))
         
-        left_column_1, center_column_1, right_column_1 = st.beta_columns(3)
-        with left_column_1:
-            numdays = st.number_input('No. of days',min_value=0,max_value=100,value=1,step=1)      
+        left_column_1, right_column_1 = st.beta_columns(2)
+             
         
-        with center_column_1:
+        with left_column_1:
             state_inp = st.selectbox('Select State', [""] + valid_states)
             if state_inp != "":
                 mapping_df = filter_column(mapping_df, "state_name", state_inp)
@@ -127,7 +126,7 @@ if nav == "English Webpage 🌐":
         DIST_ID = mapping_dict[dist_inp]
         
         base = datetime.datetime.today()
-        date_list = [base + datetime.timedelta(days=x) for x in range(numdays)]
+        date_list = [base + datetime.timedelta(days=x) for x in range(1)]
         date_str = [x.strftime("%d-%m-%Y") for x in date_list]
         
         temp_user_agent = UserAgent()
@@ -225,11 +224,10 @@ if nav == "தமிழ் வலைப்பக்கம் 🌐":
     with st.beta_expander("ஆன்லைன் முன்பதிவு"):
         valid_states = list(np.unique(mapping_df["state_name"].values))
         
-        left_column_1, center_column_1, right_column_1 = st.beta_columns(3)
-        with left_column_1:
-            numdays = st.number_input('நாட்களின் எண்ணிக்கை',min_value=0,max_value=100,value=1,step=1)
+        left_column_1, right_column_1 = st.beta_columns(2)
         
-        with center_column_1:
+        
+        with left_column_1:
             state_inp = st.selectbox('மாநிலத்தைத் தேர்ந்தெடுக்கவும்', [""] + valid_states)
             if state_inp != "":
                 mapping_df = filter_column(mapping_df, "state_name", state_inp)
@@ -247,7 +245,7 @@ if nav == "தமிழ் வலைப்பக்கம் 🌐":
         DIST_ID = mapping_dict[dist_inp]
         
         base = datetime.datetime.today()
-        date_list = [base + datetime.timedelta(days=x) for x in range(numdays)]
+        date_list = [base + datetime.timedelta(days=x) for x in range(1)]
         date_str = [x.strftime("%d-%m-%Y") for x in date_list]
         
         temp_user_agent = UserAgent()
