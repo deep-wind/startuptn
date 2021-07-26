@@ -21,10 +21,12 @@ from copy import deepcopy
 # browser_header = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'}
 # browser_header = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; ONEPLUS A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36'}
 
-st.set_page_config(layout='wide',
-                   initial_sidebar_state='collapsed',
-                   page_icon="https://www.cowin.gov.in/favicon.ico",
-                   page_title="CoWIN Vaccination Slot Availability")
+st.set_page_config(
+page_title="COVID 19 Vaccine Slot Management System (SREC)",
+page_icon="🚩",
+initial_sidebar_state="expanded"
+)
+
 
 
 def get_base64_of_bin_file(bin_file):
