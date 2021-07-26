@@ -61,7 +61,7 @@ def set_png_as_page_bg(png_file):
 
 
 set_png_as_page_bg('vac1.gif')
-st.markdown("<h1 style='text-align:center; color:black;background-color:white;font-size:20pt'>💉No waiteen' if you're eighteen 💉</h1>", unsafe_allow_html=True)
+
      
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True)
@@ -97,6 +97,8 @@ rename_mapping = {
     }
 st.sidebar.markdown("<h1 style='text-align: center; color: black;'>🧭 Navigation Bar 🧭</h1>", unsafe_allow_html=True)
 nav = st.sidebar.radio("",["Home 🏡","English Webpage 🌐","தமிழ் வலைப்பக்கம் 🌐"])
+if nav == "Home 🏡":
+    st.markdown("<h1 style='text-align:center; color:black;background-color:white;font-size:20pt'>💉 No waiteen' if you're eighteen 💉</h1>", unsafe_allow_html=True)
 if nav == "English Webpage 🌐":
     set_png_as_page_bg('vac7.jpg')
     st.title('COVID19 Vaccine Slot Management System')
@@ -219,7 +221,7 @@ if nav == "English Webpage 🌐":
            
 if nav == "தமிழ் வலைப்பக்கம் 🌐":     
     set_png_as_page_bg('vac7.jpg')
-    st.title('COVID19 Vaccine Slot Management System')
+    st.title('COVID19 தடுப்பூசி ஸ்லாட் மேலாண்மை அமைப்பு')
     with st.beta_expander("ஆன்லைன் முன்பதிவு"):
         valid_states = list(np.unique(mapping_df["state_name"].values))
         
